@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="دبلومة GIS احترافية شاملة - تعلم ArcGIS Pro والـ Remote Sensing والـ Python من الصفر للاحتراف">
+    <meta name="keywords" content="GIS, ArcGIS Pro, تدريب, دورات, نظم المعلومات الجغرافية, Remote Sensing, Web GIS">
+    <meta name="author" content="GIS Coffee">
+    <meta property="og:title" content="GIS Coffee - دبلومة GIS احترافية معتمدة">
+    <meta property="og:description" content="برنامج تدريب شامل في نظم المعلومات الجغرافية بتدريب عملي 100%">
+    <meta property="og:type" content="website">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "GIS Coffee",
+        "description": "منظمة تدريب متخصصة في نظم المعلومات الجغرافية والاستشارات الهندسية",
+        "url": "https://gis-coffee.com",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+201032527387",
+            "contactType": "Customer Service"
+        }
+    }
+    </script>
+
+    <title>GIS Coffee - دبلومة GIS احترافية معتمدة</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #1e1b4b 0%, #311005 50%, #0f172a 100%);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #10b981;
+            border-radius: 3px;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-open .accordion-content {
+            max-height: 2000px; /* تعطي مساحة كافية للمحتوى الطويل */
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased custom-scrollbar">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-emerald-500 p-2 rounded-xl text-slate-950 font-black tracking-wider text-xl shadow-lg shadow-emerald-500/20">
+                    GEO
+                </div>
+                <span class="text-xl font-black tracking-tight bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">Coffee</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6 font-medium text-xs md:text-sm text-slate-300">
+                <a href="#hero" class="hover:text-emerald-400 transition">الرئيسية</a>
+                <a href="#features" class="hover:text-emerald-400 transition">المميزات</a>
+                <a href="#curriculum-section" class="hover:text-emerald-400 transition">مناهج الدبلومة</a>
+                <a href="#projects-section" class="hover:text-emerald-400 transition">مخرجات الطلاب</a>
+                <a href="#testimonials-section" class="hover:text-emerald-400 transition">آراء المهندسين</a>
+            </div>
+            <button onclick="window.open('https://wa.me/201032527387', '_blank')" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-4 py-2 md:px-5 md:py-2.5 rounded-xl text-xs md:text-sm shadow-lg shadow-emerald-500/10 transition flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-base"></i> اشترك الآن
+            </button>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-bg pt-32 pb-20 min-h-screen flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6 text-center lg:text-right">
+                <span class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-4 py-1.5 rounded-full text-xs font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> فتح باب التسجيل لدبلومة 2026 الشاملة
+                </span>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+                    ابدأ رحلتك في عالم <br>
+                    <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">نظم المعلومات الجغرافية</span>
+                </h2>
+                <p class="text-slate-400 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-light">
+                    تدريب عملي مكثف مكون من 5 مستويات احترافية ينقلك من الصفر تماماً إلى سوق العمل الإقليمي والدولي من خلال تطبيقات حقيقية.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <button onclick="window.open('https://wa.me/201032527387', '_blank')" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-4 rounded-xl text-base shadow-lg shadow-emerald-500/20 transition flex items-center justify-center gap-3">
+                        تواصل معنا عبر واتساب <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <a href="#curriculum-section" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 font-semibold px-8 py-4 rounded-xl text-base transition flex items-center justify-center gap-2">
+                        استعرض محتوى المستويات الـ 5
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="w-72 h-72 md:w-96 md:h-96 rounded-full bg-emerald-500/10 absolute blur-3xl -z-10"></div>
+                <div class="bg-slate-900/50 border border-slate-800 p-4 rounded-3xl backdrop-blur-sm max-w-md w-full shadow-2xl">
+                    <div class="bg-slate-950 rounded-2xl p-6 space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                            <span class="font-bold text-sm text-slate-400">نظرة عامة على الدبلومة</span>
+                            <i class="fa-solid fa-graduation-cap text-emerald-400"></i>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-layer-group text-emerald-400"></i> المستوي 1: أساسيات الخرائط وقواعد البيانات والـ Topology</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-draw-polygon text-emerald-400"></i> المستوي 2: شبكات البنية التحتية (Utility Network) وبايثون</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-chart-pie text-emerald-400"></i> المستوي 3: التحليل الجيومكاني المتقدم والهيدرولوجي والـ GeoAI</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-satellite text-emerald-400"></i> المستوي 4: الاستشعار عن بعد وتحليل Google Earth Engine</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-cloud text-emerald-400"></i> المستوي 5: تطبيقات الويب وبناء الـ Dashboards اللحظية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 border-t border-slate-900 bg-slate-900/20">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+                <h3 class="text-3xl font-bold">لماذا تختار دبلومة GEO Coffee؟</h3>
+                <p class="text-slate-400 text-sm">نهج تعليمي فريد يركز على التطبيق العملي وبناء بورتفوليو قوي لكل متدرب.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl space-y-4 hover:border-emerald-500/30 transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h4 class="text-xl font-bold">تطبيق عملي 100%</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">لن تتعلم نظرياً فقط، بل ستقوم بتنفيذ تحليلات مكانية ومشاريع شبكات وبنية تحتية كاملة بنفسك.</p>
+                </div>
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl space-y-4 hover:border-emerald-500/30 transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-400/10 flex items-center justify-center text-emerald-400 text-xl"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h4 class="text-xl font-bold">متابعة وتوجيه مباشر</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">دعم فني مستمر ومراجعة دورية للخرائط والمخرجات لضمان جودتها ومطابقتها للمعايير الهندسية.</p>
+                </div>
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl space-y-4 hover:border-emerald-500/30 transition">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center text-teal-400 text-xl"><i class="fa-solid fa-briefcase"></i></div>
+                    <h4 class="text-xl font-bold">تأهيل كامل لسوق العمل</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">نساعدك في إعداد معرض أعمالك (Portfolio) ونعلمك كيف تسوق لمهاراتك وتجتاز المقابلات الشخصية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum-section" class="py-20 bg-slate-900/40 border-t border-slate-900">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-16 space-y-3">
+                <h3 class="text-3xl font-bold text-white">المناهج والمستويات بالتفصيل</h3>
+                <p class="text-slate-400 text-sm">اضغط على أي مستوى لاستعراض المحاور كاملة، مدة الدراسة، والسعر</p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition duration-300">
+                    <button onclick="toggleAccordion(this)" class="w-full p-6 text-right flex justify-between items-center focus:outline-none hover:bg-slate-800/50 transition">
+                        <div class="space-y-1">
+                            <h4 class="text-lg font-bold text-white flex items-center gap-3">
+                                <span class="bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-md text-xs font-mono">01</span>
+                                مقدمة عن نظم المعلومات الجغرافية (GIS) وإعداد المشاريع
+                            </h4>
+                            <p class="text-xs text-slate-400 pr-9">الأساسيات، إنشاء قواعد البيانات، أدوات الرسم الدقيق، الـ Topology، وتصميم الخرائط للطباعة</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content border-t border-slate-800/50 bg-slate-950/40">
+                        <div class="p-6 space-y-6 text-sm text-slate-300">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
+                                <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر كامل</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 1500 جنيه مصري</div>
+                                <div><i class="fa-solid fa-video ml-2"></i> النظام: محاضرات مسجلة + متابعة مستمرة</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                            </div>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside text-xs leading-relaxed">
+                                <li>مفهوم الطبقات (Layers) وقراءة البيانات مكانياً.</li>
+                                <li>التعرف الشامل على واجهة ArcGIS Pro ومكوناتها.</li>
+                                <li>إعداد المشروع وتنظيم بيئة العمل والمجلدات.</li>
+                                <li>إنشاء خريطة جديدة وتحديد نظام الإحداثيات المناسب.</li>
+                                <li>استعراض وإضافة الطبقات من ArcGIS Online وLiving Atlas.</li>
+                                <li>إنشاء قاعدة بيانات جغرافية (File Geodatabase).</li>
+                                <li>إنشاء Feature Classes (نقاط - خطوط - مضلعات).</li>
+                                <li>إعداد الحقول وأنواع البيانات وتعديل الـ Attribute Rules.</li>
+                                <li>قواعد التحقق: Calculation, Constraint, Validation.</li>
+                                <li>أتمتة حساب المساحات والأطوال تلقائياً أثناء الإدخال.</li>
+                                <li>استخدام SAS Planet وGoogle Earth لتحميل صور عالية الدقة.</li>
+                                <li>تنفيذ الإرساء الجغرافي (Georeferencing) بدقة بالاعتماد على GCPs.</li>
+                                <li>أدوات الرسم الدقيقة والمتقدمة (Snapping - Trace).</li>
+                                <li>استيراد ملفات CAD وCivil 3D وتحويلها إلى طبقات GIS.</li>
+                                <li>استيراد بيانات Excel وبناء قواعد الـ Topology لسلامة البيانات.</li>
+                                <li>اكتشاف ومعالجة الفجوات والتقاطعات والأخطاء عبر Error Inspector.</li>
+                                <li>إنشاء الـ Delivery Schema ومطابقة الحقول (Field Mapping & Domains).</li>
+                                <li>تصميم الرموز والوسوم (Symbology & Labeling) وإعداد الـ Layout النهائي.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition duration-300">
+                    <button onclick="toggleAccordion(this)" class="w-full p-6 text-right flex justify-between items-center focus:outline-none hover:bg-slate-800/50 transition">
+                        <div class="space-y-1">
+                            <h4 class="text-lg font-bold text-white flex items-center gap-3">
+                                <span class="bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-md text-xs font-mono">02</span>
+                                بناء وأتمتة شبكات البنية التحتية (Utility Network & Python)
+                            </h4>
+                            <p class="text-xs text-slate-400 pr-9">تصميم شبكات المياه، قواعد الاتصال والربط الصحيح، التخطيط للطرق والتحليل الشبكي المتقدم</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content border-t border-slate-800/50 bg-slate-950/40">
+                        <div class="p-6 space-y-6 text-sm text-slate-300">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
+                                <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر تدريبي متكامل</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 3000 جنيه مصري</div>
+                                <div><i class="fa-solid fa-video ml-2"></i> النظام: مسجل أونلاين + متابعة مباشرة</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                            </div>
+                            <div class="space-y-4 text-xs leading-relaxed">
+                                <p><strong class="text-white">الأساس النظري:</strong> فهم الفرق بين Geometric Network و Utility Network والتعرف على مكونات شبكات المياه والطرق بأحدث تحديثات Esri.</p>
+                                <p><strong class="text-white">Utility Network لشبكات المياه:</strong> إنشاء قواعد البيانات المهيأة وإعداد Domains وSubtypes، وتكوين الهيكل وقواعد الاتصال الحاكمة (Connectivity Rules) وأدوات Trace Network وConnectivity Manager.</p>
+                                <p><strong class="text-white">الأتمتة باستخدام Python (ArcPy):</strong> إنشاء خطوط الأنابيب أوتوماتيكياً من نقاط البداية والنهاية، وتنفيذ عمليات الـ Batch Creation لعناصر الشبكة بالكامل وأتمتة حساب الأطوال والأسماء بالاعتماد على ArcGIS Notebooks وتكليفات بايثون.</p>
+                                <p><strong class="text-white">تحليل شبكات الطرق (Network Analyst):</strong> بناء شبكات الطرق وإعداد قيم التكلفة (الوقت، المسافة، السرعة). تنفيذ تحليلات متقدمة مثل: أقرب منشأة (Closest Facility)، ومناطق الخدمة (Service Area)، واختيار المواقع الأمثل (Location-Allocation).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition duration-300">
+                    <button onclick="toggleAccordion(this)" class="w-full p-6 text-right flex justify-between items-center focus:outline-none hover:bg-slate-800/50 transition">
+                        <div class="space-y-1">
+                            <h4 class="text-lg font-bold text-white flex items-center gap-3">
+                                <span class="bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-md text-xs font-mono">03</span>
+                                التحليل الجيومكاني المتقدم والملاءمة المكانية والـ GeoAI
+                            </h4>
+                            <p class="text-xs text-slate-400 pr-9">التحليل الطبوغرافي والهيدرولوجي ونمذجة الأحواض، الإحصاء المكاني والتنبؤ، والتحليل التجاري والعسكري</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content border-t border-slate-800/50 bg-slate-950/40">
+                        <div class="p-6 space-y-6 text-sm text-slate-300">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
+                                <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر تدريبي متكامل</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 1500 جنيه مصري</div>
+                                <div><i class="fa-solid fa-video ml-2"></i> النظام: مسجل أونلاين + متابعة مباشرة</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                            </div>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside text-xs leading-relaxed">
+                                <li>تكامل التحليلات المكانية مع الـ GeoAI وتطبيقات الذكاء الاصطناعي.</li>
+                                <li>التحليل الطبوغرافي: استخراج الانحدار (Slope)، الاتجاه (Aspect)، الظلال (Hillshade)، ومناطق الرؤية (Viewshed).</li>
+                                <li>التحليل الهيدرولوجي: إنشاء شبكة التصريف المائي وتحديد مخرجات ومسارات الأحواض آلياً (Watershed Delineation).</li>
+                                <li>الإحصاء المكاني: دراسة التوزيعات والإنتربوليشن المتقدم باستخدام تقنيات Kriging وIDW.</li>
+                                <li>تحليل الملاءمة المكانية (Suitability Analysis): بناء نماذج اتخاذ القرار متعدد المعايير (MCDA) لمحطات الطاقة والسدود.</li>
+                                <li>التحليل التجاري والسكاني: دراسة الأسواق وتحديد الكثافة ومواقع الفروع والقدرة الشرائية.</li>
+                                <li>التحليل العسكري المتقدم: تحليل أرض المعركة، مناطق الرؤية والرماية، وتحديد مواقع المراقبة والكمائن.</li>
+                                <li>تحليل الطاقة الشمسية: حساب معدلات الإشعاع اليومي والسنوي واختيار أفضل الأماكن للخلايا.</li>
+                                <li>أتمتة العمليات بالكامل باستخدام أداة ModelBuilder وبناء أدوات ذكاء اصطناعي مكاني عبر Python.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition duration-300">
+                    <button onclick="toggleAccordion(this)" class="w-full p-6 text-right flex justify-between items-center focus:outline-none hover:bg-slate-800/50 transition">
+                        <div class="space-y-1">
+                            <h4 class="text-lg font-bold text-white flex items-center gap-3">
+                                <span class="bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-md text-xs font-mono">04</span>
+                                كورس الاستشعار عن بعد وتحليل المرئيات الفضائية (Google Earth Engine)
+                            </h4>
+                            <p class="text-xs text-slate-400 pr-9">تحميل البيانات الضخمة، المعالجة الرقمية، المؤشرات الطيفية، تصنيف الأغطية الأرضية، وكشف التغيرات</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content border-t border-slate-800/50 bg-slate-950/40">
+                        <div class="p-6 space-y-6 text-sm text-slate-300">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
+                                <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر تدريبي متكامل</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 1500 جنيه مصري</div>
+                                <div><i class="fa-solid fa-video ml-2"></i> النظام: مسجل أونلاين + متابعة مباشرة</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                            </div>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside text-xs leading-relaxed">
+                                <li>المفاهيم الأساسية ومفهوم إدارة البيانات الفضائية الضخمة (Geobins).</li>
+                                <li>الفرق بين المرئيات متعددة الأطياف (Multispectral) وفائقة الأطياف (Hyperspectral).</li>
+                                <li>استخدام منصة Google Earth Engine (GEE) والربط المباشر بينها وبين بيئة ArcGIS Pro.</li>
+                                <li>تحميل ومعالجة البيانات ونماذج الارتفاع من مصادر عالمية: Sentinel-2, Landsat, SRTM, ALOS.</li>
+                                <li>حساب وتطبيق المؤشرات الطيفية والزمنية المهمة: NDVI, NDWI, NDBI لعراقة ومراقبة الغطاء النباتي والمياه.</li>
+                                <li>تنفيذ التصنيف الموجه (Supervised) وغير الموجه (Unsupervised) وتقييم دقة النتائج (Accuracy Assessment).</li>
+                                <li>كشف وتحليل التغيرات عبر الزمن (Change Detection) لإنتاج تقارير وخرائط نسب التغير الفعلي للغطاء الأرضي.</li>
+                                <li>بناء نماذج معالجة المرئيات المتقدمة بشكل آلي بالكامل باستخدام بايثون والـ ModelBuilder مع تقنيات الـ GeoAI.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition duration-300">
+                    <button onclick="toggleAccordion(this)" class="w-full p-6 text-right flex justify-between items-center focus:outline-none hover:bg-slate-800/50 transition">
+                        <div class="space-y-1">
+                            <h4 class="text-lg font-bold text-white flex items-center gap-3">
+                                <span class="bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-md text-xs font-mono">05</span>
+                                دبلومة Web GIS ونشر التطبيقات والخرائط الجغرافية التفاعلية
+                            </h4>
+                            <p class="text-xs text-slate-400 pr-9">النشر الاحترافي على الويب، إنشاء تطبيقات تفاعلية بدون كود، تصميم Story Maps، ولوحات الـ Dashboard</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content border-t border-slate-800/50 bg-slate-950/40">
+                        <div class="p-6 space-y-6 text-sm text-slate-300">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
+                                <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر تدريبي متكامل</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 1200 جنيه مصري</div>
+                                <div><i class="fa-solid fa-video ml-2"></i> النظام: مسجل أونلاين + متابعة مباشرة</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                            </div>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside text-xs leading-relaxed">
+                                <li>آلية النشر المباشر من برمجية ArcGIS Pro إلى الويب وتنظيف البيانات وتحسين الأداء قبل المشاركة.</li>
+                                <li>مشاركة الخرائط كخدمات حية ومتنوعة تشمل: Feature Layers, Tile Layers, Scene Layers وإدارة صلاحياتها.</li>
+                                <li>بناء خريطة ويب (Web Map) تفاعلية من خلال واجهة ArcGIS Online وضبط الألوان والرموز والـ Pop-ups الاحترافية.</li>
+                                <li>تصميم تطبيقات ويب متكاملة للتفاعل بدون كتابة كود واحد (No-Code Apps) وتخصيص أدوات القياس والاستعلام والطباعة.</li>
+                                <li>بناء قصص وخرائط تفاعلية ساحرة عبر ArcGIS StoryMaps لتقديم عرض تفاعلي مذهل أمام العملاء والإدارة.</li>
+                                <li>تصميم لوحات تحكم ذكية واحترافية (ArcGIS Dashboards) لعرض الرسوم البيانية والمؤشرات اللحظية لبيانات المشاريع.</li>
+                                <li>الربط المباشر والتكامل مع تطبيق ArcGIS Survey123 لجمع البيانات ميدانياً ومراقبة التحديثات فورياً على الـ Dashboard.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section" class="py-20 bg-slate-950">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+                <h3 class="text-3xl font-bold text-white">معرض أعمال ومشاريع الخريجين</h3>
+                <p class="text-slate-400 text-sm">مخرجات فعلية وخرائط حقيقية تم إنتاجها بالكامل بواسطة متدربي الدبلومة</p>
+            </div>
+            
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </div>
+    </section>
+
+    <section id="testimonials-section" class="py-20 bg-slate-900/30 border-t border-slate-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+                <h3 class="text-3xl font-bold text-white">آراء المهندسين والزملاء</h3>
+                <p class="text-slate-400 text-sm">ماذا يقول مهندسو المساحة ونظم المعلومات الجغرافية عن تجربتهم معنا</p>
+            </div>
+            
+            <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                </div>
+        </div>
+    </section>
+
+    <div id="map-modal" class="fixed inset-0 bg-black/95 z-50 hidden flex items-center justify-center p-4 transition-all duration-300">
+        <button id="close-modal" class="absolute top-6 left-6 text-white text-3xl hover:text-red-500 transition"><i class="fa-solid fa-xmark"></i></button>
+        
+        <div class="max-w-4xl w-full flex flex-col items-center bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 p-6 relative">
+            <h3 id="modal-project-title" class="text-xl font-bold text-emerald-400 mb-4 text-center"></h3>
+            
+            <div class="relative w-full flex items-center justify-center min-h-[300px] md:min-h-[500px]">
+                <button id="prev-map" class="absolute right-2 md:-right-4 bg-slate-950/80 hover:bg-emerald-500 p-3 rounded-full text-white hover:text-slate-950 transition z-10"><i class="fa-solid fa-chevron-right"></i></button>
+                
+                <div class="w-full h-full flex flex-col items-center">
+                    <img id="modal-map-img" src="" alt="" class="max-h-[65vh] object-contain rounded-lg shadow-2xl border border-slate-800">
+                    <p id="modal-map-title" class="text-center text-slate-300 mt-4 text-base font-medium bg-slate-950 border border-slate-800 px-4 py-2 rounded-full"></p>
+                </div>
+
+                <button id="next-map" class="absolute left-2 md:-left-4 bg-slate-950/80 hover:bg-emerald-500 p-3 rounded-full text-white hover:text-slate-950 transition z-10"><i class="fa-solid fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-8">
+        <div class="container mx-auto px-4 text-center text-slate-500 text-sm space-y-2">
+            <p>&copy; 2026 جميع الحقوق محفوظة لـ GEO Coffee</p>
+            <p class="text-xs text-slate-600">منصة الاستشارات والتدريب المتخصص في نظم المعلومات الجغرافية</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentProjectMaps = [];
+        let currentMapIndex = 0;
+        let activeFolderName = "";
+
+        // Function to toggle accordion items
+        function toggleAccordion(button) {
+            const wrapper = button.parentElement;
+            const isOpen = wrapper.classList.contains('accordion-open');
+            
+            // اغلاق كل المفتوحين أولاً لشكل أرتب (اختياري)
+            document.querySelectorAll('.accordion-open').forEach(item => {
+                item.classList.remove('accordion-open');
+            });
+
+            if (!isOpen) {
+                wrapper.classList.add('accordion-open');
+            }
+        }
+
+        // Fetch data.json
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                renderProjects(data.projects);
+                renderTestimonials(data.testimonials);
+            })
+            .catch(error => {
+                console.error('Error loading data.json:', error);
+                document.getElementById('projects-grid').innerHTML = `<p class="text-red-400 text-center col-span-full">تأكد من وجود ملف data.json في نفس المجلد بجانب الـ HTML</p>`;
+            });
+
+        function renderProjects(projects) {
+            const grid = document.getElementById('projects-grid');
+            grid.innerHTML = '';
+
+            projects.forEach(project => {
+                const coverImage = project.maps && project.maps.length > 0 
+                    ? `${project.folder_name}/${project.maps[0].image_name}`
+                    : 'https://via.placeholder.com/400x250?text=No+Image';
+
+                const card = document.createElement('div');
+                card.className = "bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group";
+                
+                card.innerHTML = `
+                    <div>
+                        <div class="relative overflow-hidden aspect-video bg-slate-950 flex items-center justify-center">
+                            <img src="${coverImage}" alt="${project.project_title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute bottom-3 right-3 bg-emerald-500/90 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-md shadow-md">
+                                <i class="fa-solid fa-layer-group"></i> ${project.maps.length} خرائط
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition">${project.project_title}</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed line-clamp-3">${project.description}</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick='openMapSlider(${JSON.stringify(project.maps).replace(/'/g, "&apos;")}, "${project.project_title}", "${project.folder_name}")' class="w-full bg-slate-800 hover:bg-emerald-500 text-white hover:text-slate-950 font-semibold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition duration-300">
+                            <i class="fa-solid fa-images"></i> استعراض الخرائط بالكامل
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function renderTestimonials(testimonials) {
+            const grid = document.getElementById('testimonials-grid');
+            grid.innerHTML = '';
+
+            testimonials.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-slate-900/40 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between shadow-sm relative";
+                card.innerHTML = `
+                    <div class="absolute top-4 left-6 text-slate-800 text-5xl font-serif pointer-events-none">”</div>
+                    <p class="text-slate-300 text-xs mb-6 relative z-10 leading-relaxed italic">"${item.feedback}"</p>
+                    <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                        <img src="${item.image_path}" alt="${item.name}" class="w-10 h-10 rounded-full object-cover border border-emerald-500/40 bg-slate-800">
+                        <div>
+                            <h4 class="font-bold text-white text-xs">${item.name}</h4>
+                            <p class="text-[10px] text-emerald-400 mt-0.5">${item.job_title}</p>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function openMapSlider(maps, projectTitle, folderName) {
+            currentProjectMaps = maps;
+            activeFolderName = folderName;
+            currentMapIndex = 0;
+            
+            document.getElementById('modal-project-title').innerText = projectTitle;
+            updateSliderContent();
+            
+            const modal = document.getElementById('map-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function updateSliderContent() {
+            if (currentProjectMaps.length === 0) return;
+            const currentMap = currentProjectMaps[currentMapIndex];
+            document.getElementById('modal-map-img').src = `${activeFolderName}/${currentMap.image_name}`;
+            document.getElementById('modal-map-title').innerText = currentMap.title;
+        }
+
+        document.getElementById('next-map').addEventListener('click', () => {
+            currentMapIndex = (currentMapIndex + 1) % currentProjectMaps.length;
+            updateSliderContent();
+        });
+
+        document.getElementById('prev-map').addEventListener('click', () => {
+            currentMapIndex = (currentMapIndex - 1 + currentProjectMaps.length) % currentProjectMaps.length;
+            updateSliderContent();
+        });
+
+        document.getElementById('close-modal').addEventListener('click', () => {
+            document.getElementById('map-modal').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
