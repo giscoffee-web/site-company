@@ -55,7 +55,7 @@
             transition: max-height 0.3s ease-out;
         }
         .accordion-open .accordion-content {
-            max-height: 2000px; /* تعطي مساحة كافية للمحتوى الطويل */
+            max-height: 2000px;
             transition: max-height 0.5s ease-in;
         }
     </style>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl space-y-4 hover:border-emerald-500/30 transition">
                     <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center text-teal-400 text-xl"><i class="fa-solid fa-briefcase"></i></div>
-                    <h4 class="text-xl font-bold">تأهيل كامل لسوق العمل</h4>
+                    <h4 class="text-xl font-bold">تأهل كامل لسوق العمل</h4>
                     <p class="text-slate-400 text-sm leading-relaxed">نساعدك في إعداد معرض أعمالك (Portfolio) ونعلمك كيف تسوق لمهاراتك وتجتاز المقابلات الشخصية.</p>
                 </div>
             </div>
@@ -176,9 +176,9 @@
                         <div class="p-6 space-y-6 text-sm text-slate-300">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
                                 <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر كامل</div>
-                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 1500 جنيه مصري</div>
-                                <div><i class="fa-solid fa-video ml-2"></i> النظام: محاضرات مسجلة + متابعة مستمرة</div>
-                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> السعر: 1500 جنيه</div>
+                                <div><i class="fa-solid fa-video ml-2"></i> النظام: محاضرات مسجلة + متابعة والرد على الأسئلة</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: شهادة إتمام معتمدة من شركة GIS Coffee</div>
                             </div>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside text-xs leading-relaxed">
                                 <li>مفهوم الطبقات (Layers) وقراءة البيانات مكانياً.</li>
@@ -198,7 +198,7 @@
                                 <li>استيراد بيانات Excel وبناء قواعد الـ Topology لسلامة البيانات.</li>
                                 <li>اكتشاف ومعالجة الفجوات والتقاطعات والأخطاء عبر Error Inspector.</li>
                                 <li>إنشاء الـ Delivery Schema ومطابقة الحقول (Field Mapping & Domains).</li>
-                                <li>تصميم الرموز والوسوم (Symbology & Labeling) وإعداد الـ Layout النهائي.</li>
+                                <li>تصميم الرموز والوسوم (Symbology & Labeling) وإعداد الـ Layout والتحليلات وإخراج الخرائط.</li>
                             </ul>
                         </div>
                     </div>
@@ -218,16 +218,16 @@
                     <div class="accordion-content border-t border-slate-800/50 bg-slate-950/40">
                         <div class="p-6 space-y-6 text-sm text-slate-300">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
-                                <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر تدريبي متكامل</div>
-                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 3000 جنيه مصري</div>
+                                <div><i class="fa-regular fa-clock ml-2"></i> مدة الدراسة: شهر تدريبي متكامل</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> السعر: 3000 جنيه</div>
                                 <div><i class="fa-solid fa-video ml-2"></i> النظام: مسجل أونلاين + متابعة مباشرة</div>
-                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: شهادة إتمام معتمدة من شركة GIS Coffee</div>
                             </div>
                             <div class="space-y-4 text-xs leading-relaxed">
-                                <p><strong class="text-white">الأساس النظري:</strong> فهم الفرق بين Geometric Network و Utility Network والتعرف على مكونات شبكات المياه والطرق بأحدث تحديثات Esri.</p>
-                                <p><strong class="text-white">Utility Network لشبكات المياه:</strong> إنشاء قواعد البيانات المهيأة وإعداد Domains وSubtypes، وتكوين الهيكل وقواعد الاتصال الحاكمة (Connectivity Rules) وأدوات Trace Network وConnectivity Manager.</p>
-                                <p><strong class="text-white">الأتمتة باستخدام Python (ArcPy):</strong> إنشاء خطوط الأنابيب أوتوماتيكياً من نقاط البداية والنهاية، وتنفيذ عمليات الـ Batch Creation لعناصر الشبكة بالكامل وأتمتة حساب الأطوال والأسماء بالاعتماد على ArcGIS Notebooks وتكليفات بايثون.</p>
-                                <p><strong class="text-white">تحليل شبكات الطرق (Network Analyst):</strong> بناء شبكات الطرق وإعداد قيم التكلفة (الوقت، المسافة، السرعة). تنفيذ تحليلات متقدمة مثل: أقرب منشأة (Closest Facility)، ومناطق الخدمة (Service Area)، واختيار المواقع الأمثل (Location-Allocation).</p>
+                                <p><strong class="text-white">أولًا: الأساس النظري:</strong> فهم شبكات البنية التحتية والفرق بين Geometric Network و Utility Network ومكونات شبكات المياه والطرق بأحدث تحديثات Esri (2024–2025).</p>
+                                <p><strong class="text-white">ثانيًا: Utility Network لشبكات المياه:</strong> إنشاء قواعد البيانات المهيأة وإعداد Domains وSubtypes، وتكوين هيكل الـUtility Network وقواعد الـ Connectivity Rules الحاكمة، واستخدام أدوات Trace Network وConnectivity Manager وService Editor.</p>
+                                <p><strong class="text-white">ثالثًا: أتمتة شبكات المياه باستخدام Python:</strong> مراجعة أساسيات ArcPy، إنشاء خطوط الأنابيب أوتوماتيكياً من نقاط البداية والنهاية، تنفيذ عمليات Batch Creation لعناصر الشبكة وأتمتة حساب الأطوال والأسماء بالاعتماد على ArcGIS Notebooks وPython Tasks.</p>
+                                <p><strong class="text-white">رابعًا وخامسًا: تصميم وتحليل شبكات الطرق (Network Analyst):</strong> بناء طبقات الطرق وإعداد قواعد الـ Topology للاتصال الشامل، وإنشاء الـ Network Dataset وتحديد قيم التكلفة (الوقت، المسافة، السرعة). تنفيذ تحليلات متقدمة مثل: أقرب منشأة (Closest Facility)، مناطق الخدمة (Service Area)، والمسارات وعمليات الـ Location–Allocation.</p>
                             </div>
                         </div>
                     </div>
@@ -247,21 +247,21 @@
                     <div class="accordion-content border-t border-slate-800/50 bg-slate-950/40">
                         <div class="p-6 space-y-6 text-sm text-slate-300">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
-                                <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر تدريبي متكامل</div>
-                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 1500 جنيه مصري</div>
+                                <div><i class="fa-regular fa-clock ml-2"></i> مدة الدراسة: شهر تدريبي متكامل</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> السعر: 1500 جنيه</div>
                                 <div><i class="fa-solid fa-video ml-2"></i> النظام: مسجل أونلاين + متابعة مباشرة</div>
-                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: شهادة إتمام معتمدة من شركة GIS Coffee</div>
                             </div>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside text-xs leading-relaxed">
-                                <li>تكامل التحليلات المكانية مع الـ GeoAI وتطبيقات الذكاء الاصطناعي.</li>
+                                <li>تكامل التحليلات المكانية مع الـ GeoAI وتطبيقات الذكاء الاصطناعي لاتخاذ القرارات.</li>
                                 <li>التحليل الطبوغرافي: استخراج الانحدار (Slope)، الاتجاه (Aspect)، الظلال (Hillshade)، ومناطق الرؤية (Viewshed).</li>
                                 <li>التحليل الهيدرولوجي: إنشاء شبكة التصريف المائي وتحديد مخرجات ومسارات الأحواض آلياً (Watershed Delineation).</li>
-                                <li>الإحصاء المكاني: دراسة التوزيعات والإنتربوليشن المتقدم باستخدام تقنيات Kriging وIDW.</li>
-                                <li>تحليل الملاءمة المكانية (Suitability Analysis): بناء نماذج اتخاذ القرار متعدد المعايير (MCDA) لمحطات الطاقة والسدود.</li>
-                                <li>التحليل التجاري والسكاني: دراسة الأسواق وتحديد الكثافة ومواقع الفروع والقدرة الشرائية.</li>
-                                <li>التحليل العسكري المتقدم: تحليل أرض المعركة، مناطق الرؤية والرماية، وتحديد مواقع المراقبة والكمائن.</li>
-                                <li>تحليل الطاقة الشمسية: حساب معدلات الإشعاع اليومي والسنوي واختيار أفضل الأماكن للخلايا.</li>
-                                <li>أتمتة العمليات بالكامل باستخدام أداة ModelBuilder وبناء أدوات ذكاء اصطناعي مكاني عبر Python.</li>
+                                <li>الإحصاء المكاني والتنبؤ: دراسة التوزيعات والإنتربوليشن المتقدم باستخدام تقنيات Kriging وIDW.</li>
+                                <li>تحليل الملاءمة المكانية (Suitability Analysis): اختيار معايير وأوزان نماذج اتخاذ القرار متعدد المعايير (MCDA).</li>
+                                <li>التحليل الشبكي والتجاري: تحديد المسار الأمثل (Optimal Path)، الكثافة السكانية ومواقع الفروع والقدرة الشرائية.</li>
+                                <li>التحليل العسكري المتقدم: دراسة أرض المعركة، مناطق الرؤية والرماية، وتحديد مواقع الكمائن والمراقبة والملاءمة للطرق.</li>
+                                <li>تحليل الطاقة الشمسية: حساب معدلات الإشعاع السنوي واليومي ودراسة تأثير الظلال والانحدار.</li>
+                                <li>بناء النماذج الذكية وأتمتة العمليات بالكامل باستخدام أداة ModelBuilder و Python والـ GeoAI.</li>
                             </ul>
                         </div>
                     </div>
@@ -281,20 +281,19 @@
                     <div class="accordion-content border-t border-slate-800/50 bg-slate-950/40">
                         <div class="p-6 space-y-6 text-sm text-slate-300">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
-                                <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر تدريبي متكامل</div>
-                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 1500 جنيه مصري</div>
+                                <div><i class="fa-regular fa-clock ml-2"></i> مدة الدراسة: شهر تدريبي متكامل</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> السعر: 1500 جنيه</div>
                                 <div><i class="fa-solid fa-video ml-2"></i> النظام: مسجل أونلاين + متابعة مباشرة</div>
-                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: شهادة إتمام معتمدة من شركة GIS Coffee</div>
                             </div>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside text-xs leading-relaxed">
-                                <li>المفاهيم الأساسية ومفهوم إدارة البيانات الفضائية الضخمة (Geobins).</li>
-                                <li>الفرق بين المرئيات متعددة الأطياف (Multispectral) وفائقة الأطياف (Hyperspectral).</li>
-                                <li>استخدام منصة Google Earth Engine (GEE) والربط المباشر بينها وبين بيئة ArcGIS Pro.</li>
-                                <li>تحميل ومعالجة البيانات ونماذج الارتفاع من مصادر عالمية: Sentinel-2, Landsat, SRTM, ALOS.</li>
-                                <li>حساب وتطبيق المؤشرات الطيفية والزمنية المهمة: NDVI, NDWI, NDBI لعراقة ومراقبة الغطاء النباتي والمياه.</li>
-                                <li>تنفيذ التصنيف الموجه (Supervised) وغير الموجه (Unsupervised) وتقييم دقة النتائج (Accuracy Assessment).</li>
-                                <li>كشف وتحليل التغيرات عبر الزمن (Change Detection) لإنتاج تقارير وخرائط نسب التغير الفعلي للغطاء الأرضي.</li>
-                                <li>بناء نماذج معالجة المرئيات المتقدمة بشكل آلي بالكامل باستخدام بايثون والـ ModelBuilder مع تقنيات الـ GeoAI.</li>
+                                <li>مدخل لعلم الاستشعار ومفهوم الجيوبينات (Geobins) وإدارة البيانات الضخمة وفروقات المرئيات الطيفية.</li>
+                                <li>استخدام منصة Google Earth Engine (GEE) في تحليل البيانات الكبيرة وربطها بـ ArcGIS Pro.</li>
+                                <li>تحميل ومعالجة البيانات ونماذج الارتفاع من مصادر Sentinel-2, Landsat, SRTM, ALOS والصور الجوية المصححة.</li>
+                                <li>المؤشرات الطيفية والتحليل الزمني: حساب NDVI, NDWI, NDBI ومقارنة التغيرات بين سنوات مختلفة.</li>
+                                <li>تصنيف الأغطية الأرضية: التصنيف الخاضع وغير الخاضع للإشراف وتقييم الدقة (Accuracy Assessment) بالـ AI.</li>
+                                <li>كشف التغيرات (Change Detection): استخراج خرائط التغير في الغطاء الأرضي وإنشاء تقارير كمية ونسب التغير.</li>
+                                <li>الأتمتة وبناء أدوات ذكية: إنشاء نماذج معالجة المرئيات المتقدمة بشكل آلي عبر بايثون والـ ModelBuilder و GeoAI.</li>
                             </ul>
                         </div>
                     </div>
@@ -305,7 +304,7 @@
                         <div class="space-y-1">
                             <h4 class="text-lg font-bold text-white flex items-center gap-3">
                                 <span class="bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-md text-xs font-mono">05</span>
-                                دبلومة Web GIS ونشر التطبيقات والخرائط الجغرافية التفاعلية
+                                دبلومة Web GIS ونشر التطبيقات والخرائط الجغرافية التافةعية
                             </h4>
                             <p class="text-xs text-slate-400 pr-9">النشر الاحترافي على الويب، إنشاء تطبيقات تفاعلية بدون كود، تصميم Story Maps، ولوحات الـ Dashboard</p>
                         </div>
@@ -314,19 +313,19 @@
                     <div class="accordion-content border-t border-slate-800/50 bg-slate-950/40">
                         <div class="p-6 space-y-6 text-sm text-slate-300">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-800 pb-4 text-xs font-semibold text-emerald-400">
-                                <div><i class="fa-regular fa-clock ml-2"></i> المدة: شهر تدريبي متكامل</div>
-                                <div><i class="fa-regular fa-credit-card ml-2"></i> الاستثمار: 1200 جنيه مصري</div>
+                                <div><i class="fa-regular fa-clock ml-2"></i> مدة الدراسة: شهر تدريبي متكامل</div>
+                                <div><i class="fa-regular fa-credit-card ml-2"></i> السعر: 1200 جنيه</div>
                                 <div><i class="fa-solid fa-video ml-2"></i> النظام: مسجل أونلاين + متابعة مباشرة</div>
-                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: معتمدة من شركة GIS Coffee</div>
+                                <div><i class="fa-solid fa-certificate ml-2"></i> الشهادة: شهادة إتمام معتمدة من شركة GIS Coffee</div>
                             </div>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside text-xs leading-relaxed">
-                                <li>آلية النشر المباشر من برمجية ArcGIS Pro إلى الويب وتنظيف البيانات وتحسين الأداء قبل المشاركة.</li>
-                                <li>مشاركة الخرائط كخدمات حية ومتنوعة تشمل: Feature Layers, Tile Layers, Scene Layers وإدارة صلاحياتها.</li>
-                                <li>بناء خريطة ويب (Web Map) تفاعلية من خلال واجهة ArcGIS Online وضبط الألوان والرموز والـ Pop-ups الاحترافية.</li>
-                                <li>تصميم تطبيقات ويب متكاملة للتفاعل بدون كتابة كود واحد (No-Code Apps) وتخصيص أدوات القياس والاستعلام والطباعة.</li>
-                                <li>بناء قصص وخرائط تفاعلية ساحرة عبر ArcGIS StoryMaps لتقديم عرض تفاعلي مذهل أمام العملاء والإدارة.</li>
-                                <li>تصميم لوحات تحكم ذكية واحترافية (ArcGIS Dashboards) لعرض الرسوم البيانية والمؤشرات اللحظية لبيانات المشاريع.</li>
-                                <li>الربط المباشر والتكامل مع تطبيق ArcGIS Survey123 لجمع البيانات ميدانياً ومراقبة التحديثات فورياً على الـ Dashboard.</li>
+                                <li>آلية النشر الاحترافي المباشر من برمجية ArcGIS Pro إلى الويب وإعداد وتنظيف الطبقات وإدارة صلاحياتها.</li>
+                                <li>مشاركة الخرائط كخدمات: Feature Layers, Tile Layers, Scene Layers وفهم الفروقات واختيار النوع المناسب.</li>
+                                <li>بناء خريطة Web Map تفاعلية باستخدام ArcGIS Online وتنظيم الطبقات وتخصيص الرموز والـ Pop-ups والـ Color Ramps.</li>
+                                <li>تصميم تطبيق ويب بدون كود (No-Code Apps) وتخصيص واجهة الـ UI وأدوات القياس، الاستعلام، الفلترة، والطباعة.</li>
+                                <li>بناء قصص تفاعلية وخرائط ساحرة عبر ArcGIS StoryMaps ودمج الصور والفيديوهات والنصوص وعرض مسارات الخرائط.</li>
+                                <li>إنشاء لوحات معلومات Dashboards متقدمة لعرض الرسوم البيانية اللحظية والمؤشرات وربط البيانات الميدانية.</li>
+                                <li>التكامل التام مع تطبيق ArcGIS Survey123 لجمع البيانات ميدانياً ومراقبة التحديثات الحية فورياً على لوحة التحكم.</li>
                             </ul>
                         </div>
                     </div>
@@ -391,12 +390,10 @@
         let currentMapIndex = 0;
         let activeFolderName = "";
 
-        // Function to toggle accordion items
         function toggleAccordion(button) {
             const wrapper = button.parentElement;
             const isOpen = wrapper.classList.contains('accordion-open');
             
-            // اغلاق كل المفتوحين أولاً لشكل أرتب (اختياري)
             document.querySelectorAll('.accordion-open').forEach(item => {
                 item.classList.remove('accordion-open');
             });
@@ -406,8 +403,8 @@
             }
         }
 
-        // Fetch data.json
-        fetch('data.json')
+        // تم تعديل مسار جلب الـ JSON ليكون متوافقاً مع السيرفرات المحلية وعبر الويب لتفادي أخطاء CORS
+        fetch('./data.json')
             .then(response => response.json())
             .then(data => {
                 renderProjects(data.projects);
