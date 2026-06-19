@@ -25,27 +25,26 @@
       ]
     }
   ],
-  "testimonials": [
+"testimonials": [
     {
       "id": 1,
       "name": "نادر محمد سلامه",
       "job_title": "أخصائي مساحة ونظم معلومات جغرافية",
       "feedback": "ما شاء الله المحتوي ممتاز والشرح جميل جدا، الصراحة أنا أول مرة أشوف حد بيشرح بالطريقة الجميلة دي، والحقيقة استفدت بشكل كبير جدا، شكرا.",
-      "image_path": "Opinion/Nader.png"
+      "image_path": "Openion/Nader.png"
     },
     {
       "id": 2,
       "name": "مريم محمد عبدالوهاب",
       "job_title": "مهندسة مكتب فني",
       "feedback": "المحتوي كان ممتاز جدا ومفيد وربنا يبارك في علمك يا هندسة.",
-      "image_path": "Opinion/mariam.png"
+      "image_path": "Openion/mariam.png"
     },
     {
       "id": 3,
       "name": "عبدالرحمن الشحات",
       "job_title": "أخصائي نظم معلومات جغرافية",
       "feedback": "محتوي عظيم ومنظم جدا جدا والحمد لله استفدت كتير جدا من الدبلومة.",
-      "image_path": "Opinion/abd.png"
+      "image_path": "Openion/abd.png"
     }
   ]
-}
